@@ -1,7 +1,7 @@
 {
     "name": "Taleteller/bootstrap-datepicker",
-    "description": "Bootstrap form field with calendar datepicker",
-    "keywords": ["bootstrap","datepicker", "calendar"],
+    "description": "Contao form field with bootstrap datepicker",
+    "keywords": ["bootstrap","datepicker", "calendar", "contao"],
     "type": "contao-module",
     "homepage": "http://holzeisen.de",
     "time": "2015-02-09T20:00:00+00:00",
