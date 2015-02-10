@@ -17,14 +17,14 @@
         "contao/core":">=3.2,<3.5-dev",
         "contao-bootstrap/form": "*",
         "netzmacht/contao-form-helper": "*"
-    }
+    },
     "extra":{
         "contao": {
             "sources":{
                 "module": "system/modules/bootstrap-datepicker"
             },
         },
-    }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
