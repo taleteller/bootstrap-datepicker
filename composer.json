@@ -14,8 +14,7 @@
     ],
     "require": {
         "contao/core":">=3.2,<3.5-dev",
-        "contao-bootstrap/form": "*",
-        "netzmacht/contao-form-helper": "*"
+        "contao-bootstrap/bundle": ">=1.0.0-rc1",
     },
     "extra": {
         "contao": {
