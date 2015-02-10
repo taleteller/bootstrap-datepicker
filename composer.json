@@ -22,8 +22,8 @@
         "contao": {
             "sources":{
                 "module": "system/modules/bootstrap-datepicker"
-            },
-        },
+            }
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
