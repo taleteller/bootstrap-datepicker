@@ -1,0 +1,36 @@
+<?php
+// we need some classes
+$helper = Netzmacht\Contao\FormHelper\Helper::getInstance();
+$view   = $helper->createView($this);
+$container = $view->getContainer();
+$element = $container->getElement();
+
+// get us an id for the group
+$fieldid = 'datefield_'.$this->id;
+
+// generating the element has to be done here, since generate() gives no access to input groups
+$element->addClass('datetimepicker');
+$icon = Netzmacht\Bootstrap\Core\Bootstrap::generateIcon('calendar');
+$inputGroup = new Netzmacht\Bootstrap\Form\InputGroup();
+$inputGroup->setID($fieldid)
+  ->setElement($element)
+  ->setRight($icon, $inputGroup::ADDON)
+  ->addClass('date')
+  ->addClass('input-group');
+$inputGroup->addClass($this->bsdp_class);
+$container->setWrapper($inputGroup);
+
+// get it rendered
+echo $view->render();
+?>
+<script>
+$('#<?php echo $fieldid ?>').datepicker({ 
+  language: "<?php echo $GLOBALS['TL_LANGUAGE'] ?>", 
+  format: "<?php echo $this->inputFormat ?>",
+  orientation: "<?php echo $this->bsdp_adjust ?>",
+<?php if ($this->startDate) echo 'startDate: "'.$this->startDate.'",'; ?>
+<?php if ($this->endDate) echo 'endDate: "'.$this->endDate.'",'; ?>
+  autoclose: true, 
+}); 
+$('#<?php echo $fieldid ?> .input-group-addon').css('cursor','pointer');
+</script>

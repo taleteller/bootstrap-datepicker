@@ -1,0 +1,30 @@
+{
+    "name": "Taleteller/bootstrap-datepicker",
+    "description": "Bootstrap form field with calendar datepicker",
+    "keywords": ["bootstrap","datepicker", "calendar"],
+    "type": "contao-module",
+    "homepage": "http://holzeisen.de",
+    "version": "0.1.0",
+    "time": "2015-02-09T20:00:00+00:00",
+    "license":"LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Thomas Holzeisen",
+            "role": "lead"
+        }
+    ],
+    "require": {
+        "contao/core":">=3.2,<3.5-dev",
+        "contao-bootstrap/form": "*",
+        "netzmacht/contao-form-helper": "*"
+    }
+    "extra":{
+        "contao": {
+            "sources":{
+                "module": "system/modules/bootstrap-datepicker"
+            },
+        },
+    }
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
