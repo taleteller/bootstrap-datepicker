@@ -37,9 +37,13 @@ class BootstrapDatepickerField extends Widget implements GeneratesAnElement
 				array(
 					'name' => specialchars($this->name),
 					'placeholder' => $this->placeholder,
-					'maxlength' => strlen($this->inputFormat),
+					'maxlength' => strlen($this->inputFormat)
 				)
 			);
+		if ($this->mandatory) {
+			$input->addClass('mandatory')
+				->addAttributes(array('required' => true));
+		}
 		// pass min and max date to the input field
 		if ($this->bsdp_range != '') {
 			$objToday = new \Date();
