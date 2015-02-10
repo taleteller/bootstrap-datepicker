@@ -17,10 +17,15 @@
         "contao-bootstrap/form": "*",
         "netzmacht/contao-form-helper": "*"
     },
-    "extra":{
+    "autoload": {
+        "classmap": [
+            "BootstrapDatepickerField"
+        ]
+    },
+    "extra": {
         "contao": {
             "sources":{
-                "module": "system/modules/bootstrap-datepicker"
+                "TL_ROOT/system/modules/bootstrap-datepicker": "system/modules/bootstrap-datepicker"
             }
         }
     },
