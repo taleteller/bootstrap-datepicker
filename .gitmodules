@@ -1,3 +1,0 @@
-[submodule "TL_ROOT/system/modules/bootstrap-datepicker/assets/bootstrap-datepicker"]
-	path = TL_ROOT/system/modules/bootstrap-datepicker/assets/bootstrap-datepicker
-	url = https://github.com/eternicode/bootstrap-datepicker.git
