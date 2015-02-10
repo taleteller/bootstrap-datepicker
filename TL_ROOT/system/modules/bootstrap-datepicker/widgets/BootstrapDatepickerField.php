@@ -19,25 +19,26 @@ class BootstrapDatepickerField extends Widget implements GeneratesAnElement
 	public function generate()
 	{
 		// import assets
-		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/js/bootstrap-datepicker.js';
-		$GLOBALS['TL_CSS'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/css/datepicker3.css';
+		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/js/bootstrap-datepicker.js';
+		$GLOBALS['TL_CSS'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
 		// import localized assets, except for 'en' since its embedded
-		if ($GLOBALS['TL_LANGUAGE'] != 'en') {
-			$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/js/locales/bootstrap-datepicker.'.$GLOBALS['TL_LANGUAGE'].'.js';
+		$langCode = strtolower(substr($GLOBALS['TL_LANGUAGE'],0,2));
+		if ($langCode != 'en') {
+			$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/locales/bootstrap-datepicker.'.$langCode.'.min.js';
 		}
 
 		// derive input format for calendar
 		$this->inputFormat = strtolower(\Date::getInputFormat());
 		// fallback format
 		if (!$this->inputFormat) { $this->inputFormat == 'mm/dd/yyyy'; }
-
 		// create the input field
 		$input = Element::create('input')
 			->addAttributes(
 				array(
 					'name' => specialchars($this->name),
 					'placeholder' => $this->placeholder,
-					'maxlength' => strlen($this->inputFormat)
+					'maxlength' => strlen($this->inputFormat),
+					'value' => $this->value
 				)
 			);
 		if ($this->mandatory) {
