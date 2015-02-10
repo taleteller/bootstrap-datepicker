@@ -17,11 +17,6 @@
         "contao-bootstrap/form": "*",
         "netzmacht/contao-form-helper": "*"
     },
-    "autoload": {
-        "classmap": [
-            "BootstrapDatepickerField"
-        ]
-    },
     "extra": {
         "contao": {
             "sources":{
