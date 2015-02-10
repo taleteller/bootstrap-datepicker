@@ -1,5 +1,5 @@
 {
-    "name": "Taleteller/bootstrap-datepicker",
+    "name": "taleteller/bootstrap-datepicker",
     "description": "Contao form field with bootstrap datepicker",
     "keywords": ["bootstrap","datepicker", "calendar", "contao"],
     "type": "contao-module",

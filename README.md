@@ -1,6 +1,6 @@
 
-Bootstrap Form Datepicker
-==========================
+Contao Form Bootstrap Datepicker
+=================================
 
 This project utilizes the [bootstrap-datepicker project](https://github.com/eternicode/bootstrap-datepicker) for use with the [contao bootstrap framework](http://contao-bootstrap.netzmacht.de/). The datepicker is provided as form widget, available in the contao form editor. It can act as replacement for the legacy calendarfield, which does not render correctly with the bootstrap framework.
 
