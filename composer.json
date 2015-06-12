@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "contao/core":">=3.2,<3.5-dev",
+        "contao/core":">=3.2,<4.0-dev",
         "contao-bootstrap/bundle": ">=1.0.0-rc1"
     },
     "extra": {
