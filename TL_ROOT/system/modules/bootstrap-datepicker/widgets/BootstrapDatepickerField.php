@@ -12,7 +12,7 @@ use Netzmacht\Bootstrap\Core\Bootstrap;
 use Netzmacht\Contao\FormHelper\GeneratesAnElement;
 use Netzmacht\Html\Element;
 
-class BootstrapDatepickerField extends Widget implements GeneratesAnElement
+class BootstrapDatepickerField extends TextField implements GeneratesAnElement
 {
 	// custom template
 	protected $strTemplate = 'form_datepicker';
