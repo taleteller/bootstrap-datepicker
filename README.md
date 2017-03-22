@@ -41,3 +41,12 @@ This widget assumes your contao website uses valid ISO 639-1 (de,en,fr ...) code
 
 This widget also assumes a not too 'exotic' configuration for displaying date like d.m.Y, m/d/Y or Y-m-d to determine the input format for the calendar.
    
+Changelog
+----------
+
+03/22/2017
+
+- Updated datepicker component from version 1.4 to version 1.7
+- Added missing .htaccess to assets, because Contao disallows access beyond /system per default now
+- Use of minified bootstap-datepicker.min.js
+- Improved the initialization of widget a little

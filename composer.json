@@ -4,7 +4,7 @@
     "keywords": ["bootstrap","datepicker", "calendar", "contao"],
     "type": "contao-module",
     "homepage": "http://holzeisen.de",
-    "time": "2015-02-09T20:00:00+00:00",
+    "time": "2017-03-22T20:00:00+00:00",
     "license":"LGPL-3.0+",
     "authors": [
         {
@@ -14,7 +14,7 @@
     ],
     "require": {
         "contao/core":">=3.2,<4.0-dev",
-        "contao-bootstrap/bundle": ">=1.0.0-rc1"
+        "contao-bootstrap/bundle": ">=1.0.0"
     },
     "extra": {
         "contao": {

@@ -19,7 +19,7 @@ class BootstrapDatepickerField extends TextField implements GeneratesAnElement
 	public function generate()
 	{
 		// import assets
-		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/js/bootstrap-datepicker.js';
+		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
 		$GLOBALS['TL_CSS'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
 		// import localized assets, except for 'en' since its embedded
 		$langCode = strtolower(substr($GLOBALS['TL_LANGUAGE'],0,2));

@@ -24,6 +24,7 @@ $container->setWrapper($inputGroup);
 echo $view->render();
 ?>
 <script>
+$(document).ready(function(){
 $('#<?php echo $fieldid ?>').datepicker({ 
   language: "<?php echo $GLOBALS['TL_LANGUAGE'] ?>", 
   format: "<?php echo $this->inputFormat ?>",
@@ -33,4 +34,5 @@ $('#<?php echo $fieldid ?>').datepicker({
   autoclose: true, 
 }); 
 $('#<?php echo $fieldid ?> .input-group-addon').css('cursor','pointer');
+});
 </script>
