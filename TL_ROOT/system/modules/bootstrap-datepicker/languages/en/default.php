@@ -14,10 +14,10 @@ $GLOBALS['TL_LANG']['tl_form_field']['bsdp_adjust'] = array(
 	'label' =>         array('Adjustment','Which direction the popup calendar will open.'),
 	// for some odd reason sides are swapped between visual placing and adjustment
 	// possibly the devs thought of the small arrow instead of the calendar placement
-	'options' =>       array('top left'         => 'bottom right',
-	                         'top right'        => 'bottom left',
-	                         'bottom left'      => 'top right',
-	                         'bottom right'     => 'top left',
+	'options' =>       array('top left'         => 'top right',
+	                         'top right'        => 'top left',
+	                         'bottom left'      => 'bottom right',
+	                         'bottom right'     => 'bottom left',
 	                         'auto'             => 'automatically'
 	                        ),
 );

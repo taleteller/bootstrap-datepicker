@@ -12,12 +12,10 @@ $GLOBALS['TL_LANG']['FFL']['bootstrap-datepicker'] = array('Datumsauswahl', 'Ein
 
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_adjust'] = array(
 	'label' =>         array('Ausrichtung','Plazierung des Popup-Kalenders zum Eingabefeld.'),
-	// for some odd reason sides are swapped between visual placing and adjustment
-	// possibly the devs thought of the small arrow instead of the calendar placement
-	'options' =>       array('top left'         => 'Unten Rechts',
-	                         'top right'        => 'Unten Links',
-	                         'bottom left'      => 'Oben Rechts',
-	                         'bottom right'     => 'Oben Links',
+	'options' =>       array('top left'         => 'Oben Rechts',
+	                         'top right'        => 'Oben Links',
+	                         'bottom left'      => 'Unten Rechts',
+	                         'bottom right'     => 'Unten Links',
 	                         'auto'             => 'Automatisch'
 	                        ),
 );

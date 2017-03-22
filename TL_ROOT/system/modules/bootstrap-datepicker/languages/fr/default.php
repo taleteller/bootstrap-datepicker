@@ -15,12 +15,10 @@ $GLOBALS['TL_LANG']['FFL']['bootstrap-datepicker'] = array('Date picke', 'Champ 
 
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_adjust'] = array(
 	'label' =>         array('Ajustement','Quelle direction le calendrier contextuel se ouvre.'),
-	// for some odd reason sides are swapped between visual placing and adjustment
-	// possibly the devs thought of the small arrow instead of the calendar placement
-	'options' =>       array('top left'         => 'en bas à droite',
-	                         'top right'        => 'en bas à gauche',
-	                         'bottom left'      => 'en haut à droite',
-	                         'bottom right'     => 'en haut à gauche',
+	'options' =>       array('top left'         => 'en haut à droite',
+	                         'top right'        => 'en haut à gauche',
+	                         'bottom left'      => 'en bas à droite',
+	                         'bottom right'     => 'en basà gauche',
 	                         'auto'             => 'automatique'
 	                        ),
 );
