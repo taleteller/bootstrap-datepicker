@@ -52,7 +52,7 @@ class BootstrapRangepickerField extends TextField
  		
 
                 // first input field
-                $result = sprintf('<input type="text" name="%s[]" id="ctrl_start_%s" class="input-sm form-control" value="%s"%s>',
+                $result = sprintf('<input type="text" name="%s[]" id="ctrl_start_%s" class="form-control" value="%s"%s>',
                         $this->strName,
                         $this->strId,
                         specialchars($this->varValue[0]),
@@ -61,7 +61,7 @@ class BootstrapRangepickerField extends TextField
                 // delimiter
                 $result .= '<span class="input-group-addon"> '.($this->bsdp_delimiter == ''?'&ndash;':$this->bsdp_delimiter).' </span>';
                 // second input field
-                $result .= sprintf('<input type="text" name="%s[]" id="ctrl_start_%s" class="input-sm form-control" value="%s"%s>',
+                $result .= sprintf('<input type="text" name="%s[]" id="ctrl_start_%s" class="form-control" value="%s"%s>',
                         $this->strName,
                         $this->strId,
                         specialchars($this->varValue[1]),
@@ -69,8 +69,9 @@ class BootstrapRangepickerField extends TextField
                 );
                                 
                 // wrapper group
-                $result = sprintf('<div id="ctrl_grp_%s" class="input-daterange input-group">'.$result.'</div>',
-                                                        $this->strId);
+                $result = sprintf('<div id="ctrl_grp_%s" class="input-daterange input-group %s">'.$result.'</div>',
+                                                        $this->strId,
+                                                        $this->bsdp_class);
  		
 		// initialization script, only to be applied in front end
                 if (TL_MODE=="FE") { 
