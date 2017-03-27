@@ -12,19 +12,21 @@ use Netzmacht\Bootstrap\Core\Bootstrap;
 use Netzmacht\Contao\FormHelper\GeneratesAnElement;
 use Netzmacht\Html\Element;
 
-class BootstrapDatepickerField extends TextField implements GeneratesAnElement
+class BootstrapDatepickerField extends TextField  implements GeneratesAnElement
 {
 	// custom template
 	protected $strTemplate = 'form_datepicker';
 	public function generate()
 	{
-		// import assets
-		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
-		$GLOBALS['TL_CSS'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
-		// import localized assets, except for 'en' since its embedded
-		$langCode = strtolower(substr($GLOBALS['TL_LANGUAGE'],0,2));
-		if ($langCode != 'en') {
-			$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/locales/bootstrap-datepicker.'.$langCode.'.min.js';
+		// import assets to frontend
+                if (TL_MODE=="FE") { 
+                        $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
+                        $GLOBALS['TL_CSS'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css|static';
+                        // import localized assets, except for 'en' since its embedded
+                        $langCode = strtolower(substr($GLOBALS['TL_LANGUAGE'],0,2));
+                        if ($langCode != 'en') {
+                                $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/bootstrap-datepicker/assets/bootstrap-datepicker/dist/locales/bootstrap-datepicker.'.$langCode.'.min.js';
+                        }
 		}
 
 		// derive input format for calendar

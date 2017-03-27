@@ -11,7 +11,8 @@
 // Yes i know, this translation is wonky!
 // Any native frech speaker is welcome to provide better text!
 
-$GLOBALS['TL_LANG']['FFL']['bootstrap-datepicker'] = array('Date picke', 'Champ de texte avec la date popup calendrier cueillette..');
+$GLOBALS['TL_LANG']['FFL']['bootstrap-datepicker'] = array('Sélection de la date', 'Champ de texte avec la date popup calendrier cueillette.');
+$GLOBALS['TL_LANG']['FFL']['bootstrap-rangepicker'] = array('Sélection de la période', 'Boîte avec deux champs de date dans le calendrier des périodes.');
 
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_adjust'] = array(
 	'label' =>         array('Ajustement','Quelle direction le calendrier contextuel se ouvre.'),
@@ -31,6 +32,7 @@ $GLOBALS['TL_LANG']['tl_form_field']['bsdp_range'] = array(
 	                        ),
 );
 
+$GLOBALS['TL_LANG']['tl_form_field']['bsdp_delimiter'] = array('Les champs delimiter','Séparateur entre les champs de date, trait d\'union sauf définition contraire.');
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_datemin'] = array('première date','La première date vous pouvez choisir parmi.');
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_datemax'] = array('date limite','La dernière date à laquelle vous pouvez choisir parmi.');
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_class']   = array('CSS class','Vous pouvez spécifier un ou plusieurs classe ici.');

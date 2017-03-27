@@ -44,6 +44,11 @@ This widget also assumes a not too 'exotic' configuration for displaying date li
 Changelog
 ----------
 
+03/27/2017
+
+- Added a second widget for date range selection, since the new component supports them now
+- Further improvements of code
+
 03/22/2017
 
 - Updated datepicker component from version 1.4 to version 1.7

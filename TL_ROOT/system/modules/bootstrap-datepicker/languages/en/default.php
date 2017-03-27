@@ -9,11 +9,10 @@
  */
 
 $GLOBALS['TL_LANG']['FFL']['bootstrap-datepicker'] = array('Date picker', 'Text field with popup calendar date picking.');
+$GLOBALS['TL_LANG']['FFL']['bootstrap-rangepicker'] = array('Date range picker', 'Two text fields with popup calender for time ranges.');
 
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_adjust'] = array(
 	'label' =>         array('Adjustment','Which direction the popup calendar will open.'),
-	// for some odd reason sides are swapped between visual placing and adjustment
-	// possibly the devs thought of the small arrow instead of the calendar placement
 	'options' =>       array('top left'         => 'top right',
 	                         'top right'        => 'top left',
 	                         'bottom left'      => 'bottom right',
@@ -30,6 +29,7 @@ $GLOBALS['TL_LANG']['tl_form_field']['bsdp_range'] = array(
 	                        ),
 );
 
+$GLOBALS['TL_LANG']['tl_form_field']['bsdp_delimiter'] = array('Field delimiter','Delimiter between input fields, shows a dash unless specified.');
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_datemin'] = array('Earliest date','The earliest date you can choose from.');
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_datemax'] = array('Latest date','The latest date you can choose from.');
 $GLOBALS['TL_LANG']['tl_form_field']['bsdp_class']   = array('CSS class','You can specify one or more classes here.');

@@ -23,6 +23,7 @@ $container->setWrapper($inputGroup);
 // get it rendered
 echo $view->render();
 ?>
+<? if (TL_MODE=="FE"): ?>
 <script>
 $(document).ready(function(){
 $('#<?php echo $fieldid ?>').datepicker({ 
@@ -31,8 +32,8 @@ $('#<?php echo $fieldid ?>').datepicker({
   orientation: "<?php echo $this->bsdp_adjust ?>",
 <?php if ($this->startDate) echo 'startDate: "'.$this->startDate.'",'; ?>
 <?php if ($this->endDate) echo 'endDate: "'.$this->endDate.'",'; ?>
-  autoclose: true, 
 }); 
 $('#<?php echo $fieldid ?> .input-group-addon').css('cursor','pointer');
 });
 </script>
+<? endif; ?>
